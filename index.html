@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Botpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chào mừng bạn đến với Chatbot AI!</h1>
+
+    <!-- Chatbot sẽ hiển thị ở đây -->
+    <div id="chat-container"></div>
+
+    <!-- Nhúng Webchat của Botpress -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <script>
+        window.botpressWebChat.init({
+            botId: "918e9d6e-3532-4ca5-9655-ab99f8c2c90f", // Bot ID của bạn
+            host: "https://cdn.botpress.cloud",
+            messagingUrl: "https://messaging.botpress.cloud",
+            clientId: "918e9d6e-3532-4ca5-9655-ab99f8c2c90f", // Dùng luôn botId
+            lazyLoad: true,
+            showCloseButton: true,
+            themeName: "prism",
+            stylesheet: "https://cdn.botpress.cloud/webchat/v2.3/themes/default.css"
+        });
+    </script>
+</body>
+</html>
